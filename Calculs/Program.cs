@@ -46,11 +46,13 @@ namespace Calculs
                 // traitement des choix
                 if (choix != 0)
                 {
+                    //Creation des 2 nombres aléatoires
+                    val1 = rand.Next(1, 10);
+                    val2 = rand.Next(1, 10);
                     if (choix == 1)
                     {
                         // choix de l'addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+
                         correct = false;
                         while (!correct)
                         {
@@ -82,8 +84,7 @@ namespace Calculs
                         if (choix == 2)
                         {
                             // choix de la multiplication
-                            val1 = rand.Next(1, 10);
-                            val2 = rand.Next(1, 10);
+                            
                             correct = false;
                             while(!correct)
                             {
